@@ -1,2 +1,2 @@
-:HL["/ai-pm-learning/_next/static/chunks/0ni4gqat_tmn-.css","style"]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"/_not-found","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"p3dfShKoSYzPwtdGsyvrw"}
+:HL["/ai-pm-learning/_next/static/chunks/12h026qd0f525.css","style"]
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"/_not-found","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"bRNrHqZDrhbIWgqY95JdJ"}
