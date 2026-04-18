@@ -1,6 +1,7 @@
 import { curriculum } from '@/data/curriculum';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
+import Header from '@/components/ui/header';
 
 interface PageProps {
   params: Promise<{ phase: string }>;
@@ -34,34 +35,8 @@ export default async function PhasePage({ params }: PageProps) {
   const isCompleted = phase.status === 'completed';
 
   return (
-    <main className="min-h-screen bg-gradient-to-br from-slate-50 via-indigo-50/20 to-purple-50/10">
-      {/* Header */}
-      <header className="bg-white/80 backdrop-blur-sm border-b border-slate-200/50 sticky top-0 z-50">
-        <div className="max-w-4xl mx-auto px-4 py-4">
-          <div className="flex items-center justify-between">
-            <div className="flex items-center gap-3">
-              <Link href="/learn" className="w-10 h-10 rounded-xl bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center text-white font-bold text-lg shadow-lg shadow-indigo-200">
-                AI
-              </Link>
-              <div>
-                <h1 className="text-lg font-bold text-slate-800">学习旅程</h1>
-                <p className="text-xs text-slate-500">按阶段系统学习</p>
-              </div>
-            </div>
-            <nav className="flex items-center gap-1">
-              <Link href="/" className="px-4 py-2 text-sm font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-50 rounded-lg transition-colors">
-                首页
-              </Link>
-              <Link href="/learn" className="px-4 py-2 text-sm font-medium text-indigo-600 bg-indigo-50 rounded-lg">
-                学习
-              </Link>
-              <Link href="/progress" className="px-4 py-2 text-sm font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-50 rounded-lg transition-colors">
-                进度
-              </Link>
-            </nav>
-          </div>
-        </div>
-      </header>
+    <main className="min-h-screen bg-slate-50">
+      <Header active="learn" />
 
       {/* Content */}
       <div className="max-w-4xl mx-auto px-4 py-10">
